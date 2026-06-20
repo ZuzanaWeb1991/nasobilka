@@ -772,7 +772,7 @@ function PreviewScreen({ mode, number, onStart, onBack }) {
         <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
           {rows.map((r, i) => (
             <div key={i} style={{
-              display:"flex", alignItems:"center", justifyContent:"space-between",
+              display:"flex", alignItems:"baseline", justifyContent:"center", gap:10,
               background: i % 2 === 0 ? C.accentLight : "transparent",
               borderRadius:10, padding:"8px 14px",
             }}>
