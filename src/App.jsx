@@ -84,25 +84,24 @@ const Sound = {
 
 
 const PRAISES = [
-  "Jsi borec!", "Jen tak dál, borče!", "Jsi pravý stavitel!",
-  "Skvělá práce!", "Mistr stavitel v akci!", "Tohle ti jde!",
-  "Výborně!", "Paráda!", "Super práce!", "Další blok je na místě!",
-  "Tvoje stavba vypadá skvěle!", "Ten domeček roste jedna radost!",
-  "Pokračuj, staviteli!", "To se povedlo!", "Stavíš jako profesionál!",
+  "Skvěle!", "Paráda!", "Výborně!", "Super práce!", "To se povedlo!",
+  "Jen tak dál!", "Tohle ti jde!", "Skvělá práce!", "Mistr v akci!",
+  "Další blok je na místě!", "Tvoje stavba vypadá skvěle!",
+  "Ten domeček roste jedna radost!", "Skvělý postup!", "Bezva!", "Perfektní!",
 ];
 
 const WRONG_MSGS = [
-  () => "Skoro, staviteli! Tentokrát je správně",
-  () => "Skoro, staviteli! Správný výsledek je",
-  () => "To nevadí, staviteli. Správně je",
-  () => "Každý stavitel se učí. Tentokrát je správně",
+  () => "Skoro! Tentokrát je správně",
+  () => "Skoro! Správný výsledek je",
+  () => "To nevadí. Správně je",
+  () => "Pořád se učíme. Tentokrát je správně",
 ];
 
 const COMPLETE_MSGS = [
-  "Perfektní práce! Jsi mistr stavitel.",
+  "Perfektní práce! Jsi mistr(yně) stavitel(ka).",
   "Úžasné! Domeček je hotový.",
   "Skvělá práce! Postavil(a) jsi celý domeček.",
-  "Výborně, staviteli! Stavba je dokončena.",
+  "Výborně! Stavba je dokončena.",
 ];
 
 const STAGE_NAMES_BY_BUILDING = {
