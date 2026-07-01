@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "app.vercel.nasobilka_fm6s.twa",
-        "sha256_cert_fingerprints": ["34:32:5B:EA:63:16:5C:75:9C:62:5A:2E:EF:53:95:E5:AD:2C:85:30:D9:03:36:A6:52:2F:A9:36:E1:F0:DD:1B"]
-      }
-    }]
