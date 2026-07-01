@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#5BA4E0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="MathBrick" />
+    <meta name="description" content="Procvičuj násobilku a dělení stavěním domečku!" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192.png" />
+    <title>MathBrick</title>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+      body { margin: 0; overscroll-behavior: none; }
+
+      #boot-splash {
+        position: fixed; inset: 0; z-index: 9999;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: #D6EEFF;
+        font-family: 'Segoe UI', 'Nunito', system-ui, sans-serif;
+        gap: 16px;
+      }
+      #boot-splash img {
+        width: 100px; height: 100px;
+        border-radius: 22px;
+        box-shadow: 0 8px 24px rgba(91,164,224,0.25);
+      }
+      #boot-splash .title {
+        font-size: 28px; font-weight: 900; color: #2E4A6B;
+        letter-spacing: -0.5px;
+        display: flex; gap: 0;
+      }
+      #boot-splash .title .math { color: #2E4A6B; font-weight: 900; }
+      #boot-splash .title .brick { color: #5A7FA8; font-weight: 400; }
+      #boot-splash .subtitle {
+        font-size: 13px; font-weight: 700;
+        color: #5BA4E0; letter-spacing: 0.5px; text-transform: uppercase;
+        overflow: hidden; white-space: nowrap;
+        border-right: 2px solid #5BA4E0;
+        width: 0;
+        animation: typing 1.2s steps(16, end) 0.4s forwards,
+                   blink 0.7s step-end 0.4s 3;
+      }
+      @keyframes typing {
+        from { width: 0; }
+        to   { width: 9.5em; }
+      }
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Pro spuštění aplikace je potřeba JavaScript.</noscript>
+    <div id="boot-splash">
+      <img src="%PUBLIC_URL%/icon-192.png" alt="MathBrick ikona" />
+      <div class="title">
+        <span class="math">Math</span><span class="brick">Brick</span>
+      </div>
+      <div class="subtitle">Počítej a stav</div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
